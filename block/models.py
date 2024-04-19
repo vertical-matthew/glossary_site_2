@@ -62,6 +62,7 @@ class Category(Common):
 
 
 class Block(models.Model):
+    #id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
     description = models.TextField(blank=True, null=True)
     material = models.ForeignKey(Material, on_delete=models.CASCADE)
